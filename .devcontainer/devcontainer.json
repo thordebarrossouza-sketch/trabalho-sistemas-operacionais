@@ -1,6 +1,6 @@
 {
     "name": "Node.js Live Server",
-    "image": "://microsoft.com",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node",
     // Installs dependencies and starts the server automatically
     "postCreateCommand": "npm install",
     // Executes every time the Codespace starts/resumes
