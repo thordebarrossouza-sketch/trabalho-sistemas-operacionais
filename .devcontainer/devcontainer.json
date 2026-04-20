@@ -1,0 +1,27 @@
+{
+    "name": "Node.js Live Server",
+    "image": "://microsoft.com",
+    // Installs dependencies and starts the server automatically
+    "postCreateCommand": "npm install",
+    // Executes every time the Codespace starts/resumes
+    "waitFor": "postCreateCommand",
+    "postStartCommand": "npx live-server --port=5500",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ritwickdey.LiveServer"
+            ]
+        }
+    },
+    // Makes the server accessible via the browser
+    "forwardPorts": [
+        5500
+    ],
+    "portsAttributes": {
+        "5500": {
+            "label": "Live Server",
+            "onAutoForward": "openBrowser"
+        }
+    },
+    "remoteUser": "node"
+}
