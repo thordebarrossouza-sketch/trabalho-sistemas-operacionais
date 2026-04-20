@@ -1,8 +1,6 @@
 {
     "name": "Node.js Live Server",
     "image": "mcr.microsoft.com/devcontainers/javascript-node",
-    // Executes every time the Codespace starts/resumes
-    "waitFor": "postCreateCommand",
     "postStartCommand": "npx live-server --port=5500",
     "customizations": {
         "vscode": {
