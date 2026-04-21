@@ -1,0 +1,11 @@
+.parallax-img {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; /* Altura da tela cheia */
+}
+.img-1 { background-image: url('imagem2.png'); }
+.img-2 { background-image: url('imagem3.png'); }
+.img-3 { background-image: url('imagem4.png'); }
+.img-4 { background-image: url('imagem5.png'); }
